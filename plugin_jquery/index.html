@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plugin Jquery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h1>Formulario de Cadastro</h1>
+            <div>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="telefone">telefone:</label>
+                <input type="tel" name="telefone" id="telefone">
+            </div>
+            <div>
+                <label for="cpf">CPF:</label>
+                <input type="text" name="cpf" id="cpf">
+            </div>
+            <div>
+                <label for="endereco">Endereco Completo:</label>
+                <input type="text" name="endereco" id="endereco">
+            </div>
+            <div>
+                <label for="cep">CEP:</label>
+                <input type="text" name="cep" id="cep">
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#cpf').mask('000.000.000-00', {rerverse: true});
+            $('#cep').mask('00000-000');
+            $('#telefone').mask('(00) 00000-0000');
+        })
+    </script>
+</body>
+</html>
