@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <style>
+        form {
+            width: 960px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Formulario de Cadastro</h1>
+        <div class="d-flex justify-content-center">
+            <form >
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Nome:</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nome Completo...">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">E-mail:</label>
+                    <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Seu e-mail...">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Telefone:</label>
+                    <input type="tel" class="form-control" id="formGroupExampleInput2" placeholder="Seu telefone aqui...">
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-success">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
